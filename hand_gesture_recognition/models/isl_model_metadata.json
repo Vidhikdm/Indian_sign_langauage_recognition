@@ -1,0 +1,7 @@
+{
+    "model": "Random Forest",
+    "accuracy": 0.7549019607843137,
+    "f1_score": 0.7422714540361599,
+    "num_classes": 23,
+    "trained_on": "2025-12-27 12:32:05"
+}
