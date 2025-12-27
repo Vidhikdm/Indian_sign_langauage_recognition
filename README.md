@@ -1,4 +1,4 @@
-# 🇮🇳 Indian Sign Language Recognition System
+# Indian Sign Language Recognition System
 A real-time Indian Sign Language (ISL) recognition system built with MediaPipe, OpenCV, and Machine Learning. This project recognizes ISL alphabets and common words/phrases with 90%+ accuracy, enabling communication for the deaf and hard-of-hearing community.
 
 
@@ -9,6 +9,7 @@ This project aims to bridge that gap by providing:
 1. Real-time ISL recognition on commodity hardware
 2. Educational tool for learning ISL
 3. Accessibility technology for ISL users
+
 
 
 # Features
@@ -31,73 +32,36 @@ Production-Ready: Clean, modular, well-documented code
 Dual Datasets: Supports both Kaggle datasets and custom collection
 
 
-
-
-**hand-gesture-recognition/**
-│
-├── **notebooks/**                     # Development notebooks
-│   ├── 01-05_*.ipynb                  # Basic gesture recognition
-│   ├── 06_ISL_data_preparation.ipynb  # ISL dataset setup
-│   ├── 07_ISL_model_training.ipynb    # ISL model training
-│   └── 08_ISL_real_time.ipynb         # Real-time ISL testing
-│
-├── **src/**                           # Core modules
-│   ├── hand_tracker.py                # MediaPipe wrapper
-│   ├── feature_extractor.py           # Feature engineering
-│   ├── gesture_classifier.py          # ML classifier
-│   └── utils.py                       # Helper functions
-│
-├── **app/**                           # Applications
-│   ├── gesture_recognition_app.py     # Basic gestures
-│   └── isl_recognition_app.py       **# ISL recognition**
-│
-├── **data/**                          # Datasets
-│   ├── raw/
-│   │   ├── gesture_dataset.npz        # Basic gestures
-│   │   └── isl_custom_dataset.npz     # ISL dataset
-│   └── processed/
-│
-├── **models/**                        # Trained models
-│   ├── gesture_classifier.pkl         # Basic model
-│   ├── isl_gesture_classifier.pkl   **# ISL model** 
-│   ├── isl_scaler.pkl
-│   └── isl_model_metadata.json
-│
-├── assets/                            # Documentation
-└── requirements.txt
-
-
-
-
-# Download ISL Dataset (Option A: Kaggle)
+# Dataset
+**Download ISL Dataset (Option A: Kaggle)**
 **Download dataset**
 
 Dataset link : https://www.kaggle.com/datasets/soumyakushwaha/indian-sign-language-dataset?select=ISL_Dataset
 
 
-# Collect Your Own ISL Data (Option B: Custom)
+**Collect Your Own ISL Data (Option B: Custom)**
 
 jupyter notebook notebooks/06_ISL_data_preparation.ipynb
 
-Instructions:
+**Instructions:**
 
-Run the ISL Data Collector cell
-Type gesture name (e.g., "A", "hello")
-Press SPACE to collect 50+ samples
-Repeat for all ISL signs you want to recognize
-Save dataset
+1. Run the ISL Data Collector cell
+2. Type gesture name (e.g., "A", "hello")
+3. Press SPACE to collect 50+ samples
+4. Repeat for all ISL signs you want to recognize
+5. Save dataset
 
 
 
 # ISL Signs Supported
 
-# Default Configuration (Alphabets)
+**Default Configuration (Alphabets)**
 
 | Sign | Description           
 |------|----------------------
 | A-Z  | ISL alphabet letters  
 
-# Extended Configuration (Words)
+**Extended Configuration (Words)**
 
 | Sign      | 
 |-----------|
@@ -113,11 +77,10 @@ Save dataset
 | water     | 
 | food      |
 
----
 
 # Performance Metrics
 
-# Model Performance
+**Model Performance**
 
 | Metric          | Value      |
 |-----------------|------------|
@@ -125,7 +88,6 @@ Save dataset
 | F1-Score        | 0.92+      |
 | Inference Speed | 20-30 FPS  |
 | Latency         | <50 ms     |
-
 
 
 
@@ -139,11 +101,12 @@ ISLRTC Resources : http://www.islrtc.nic.in/
 MediaPipe Hands : https://ai.google.dev/edge/mediapipe/solutions/guide
 ISL Research Papers : https://scholar.google.com/scholar?q=indian+sign+language+recognition
 
+#
 
 License
 MIT License - Free for educational and commercial use
 
-
+#
 
 **This project aims to make communication more accessible for the 5+ million deaf and hard-of-hearing individuals in India. Every contribution, star, or share helps raise awareness about ISL and accessibility technology.
 Together, we can break communication barriers!**
